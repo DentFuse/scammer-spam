@@ -74,6 +74,7 @@ async function handler() {
       processed++;
     } catch (e) {
       console.error(e);
+      await sleep(30000);
     }
   }
 }
